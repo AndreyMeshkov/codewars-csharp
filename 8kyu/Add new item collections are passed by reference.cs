@@ -17,7 +17,7 @@ public class AddMore
 {
     public static List<int> AddExtra(List<int> listOfNumbers)
     {
-        List<int> result = listOfNumbers.ToList();
+        List<int> result = new List<int>(listOfNumbers);
         result.Add(1);
         return result;
     }
